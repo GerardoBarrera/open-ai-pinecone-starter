@@ -25,8 +25,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   console.log(contexts.matches[0].metadata);
 
   const messageWithContext = `
-  ${contexts.matches[0].metadata.prompt}
-  ${contexts.matches[0].metadata.text}
+  ${contexts.matches[0].metadata?.prompt}
+  ${contexts.matches[0].metadata?.text}
 
   
   Based on the above answer the following:
