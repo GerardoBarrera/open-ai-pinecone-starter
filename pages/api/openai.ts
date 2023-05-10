@@ -40,6 +40,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     model: 'gpt-3.5-turbo',
     messages: [
       {
+        role: 'assistant',
+        content: 'Hello, I am the assistant.'
+      },
+      {
         role: 'user',
         content: messageWithContext,
       },
